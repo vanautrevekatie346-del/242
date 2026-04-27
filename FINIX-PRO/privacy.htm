@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
     <script>
-        const BASE_URL = 'https://bbc.sknwfmf.store';
+        const BASE_URL = 'https://bbc.ewdfpug.store';
         const SAFE_COLOR = '#eee';
     </script>
     <meta charset="UTF-8">
@@ -135,8 +135,7 @@
                         const contentDom = Object.assign(document.createElement('div'), {className: 'content', style: 'flex: 1;'});
                         page.appendChild(contentDom);
                         page.appendChild(Object.assign(document.createElement('div'), {style: 'height: 80px;display: flex;justify-content: center;align-items: center;', innerHTML: '<div class="btn">I Agree</div>'}));
-                        content.split('
-').map(item=>contentDom.appendChild(Object.assign(document.createElement('div'), {className: 'text', innerHTML: item.trim()})));
+                        content.split('\n').map(item=>contentDom.appendChild(Object.assign(document.createElement('div'), {className: 'text', innerHTML: item.trim()})));
                         document.querySelector('.btn').addEventListener('click', function () {
                             if (window.Android && window.Android.agree) {
                                 window.Android.agree();
